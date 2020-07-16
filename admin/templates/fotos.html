@@ -1,0 +1,32 @@
+<md-toolbar class="md-theme-indigo md-hue-2" md-scroll-shrink ng-if="true">
+    <div class="md-toolbar-tools">
+        <h1 flex md-truncate>GALERIA</h1>
+        <md-button class="md-icon-button" aria-label="Favorite" ng-click="ctrl.logOut();">
+            <md-icon md-svg-icon="img/icon/input-24px.svg" class="favorite-icon"></md-icon>
+        </md-button>
+    </div>
+</md-toolbar>
+<md-content  layout-padding>
+    <md-subheader class="md-primary"> FOTOS </md-subheader>
+        <fieldset style="border: dotted gray 3px;">
+            <img ng-src="{{ctrl.noticias[0].img}}" alt="{{ctrl.noticias[0].titulo}}" title="{{ctrl.noticias[0].titulo}}" style="width: 100px; height: auto;"/>
+            <legend style="text-align:center;">SUBIR FOTO</legend>
+                <div>
+                    <p>FOTO PRINCIPAL: 694px de ancho x 320 de alto</p>
+                    <h4 style="color:red"></h4>
+                        <upload-icon dirimg="../img/articulos/{{ctrl.idArt}}/" titulo="FOTO" direccion="../../../../img/articulos/{{ctrl.idArt}}/"></upload-icon>
+                </div>
+        </fieldset>
+        <fieldset style="border: dotted gray 3px;">
+            <legend style="text-align:center;">MODIFICAR EL ROL DE UNA FOTO</legend>
+            <div ng-init="ctrl.showDirectory();" layout="row" layout-align="start start" layout-xs="column">
+                <div ng-repeat="f in ctrl.fotosDirectorio track by $index" layout="column">
+                    <img ng-src="../img/articulos/{{ctrl.idArt}}/{{f.img}}" style="width: 200px; height: auto;" />
+                    <br/>
+                    <span>LINK: img/articulos/{{ctrl.idArt}}/{{f.img}}</span>
+                    <md-button class="md-raised md-primary" ng-click="ctrl.EditLink({'img':f.img},'articulos',ctrl.idArt,2)">PRINCIPAL</md-button>
+                    <md-button class="md-raised md-warn" ng-click="ctrl.deleteFoto('../../../../img/articulos/'+ctrl.idArt+'/'+f.img)">BORRAR</md-button> 
+                </div>
+            </div>
+        </fieldset>
+ </md-content>    

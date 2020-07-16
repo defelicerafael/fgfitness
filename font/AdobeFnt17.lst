@@ -1,0 +1,26 @@
+%!Adobe-FontList 1.17
+%Locale:0x2c0a
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GothicCGNo1
+FamilyName:Gothic CG No1
+StyleName:Regular
+FullName:Gothic CG No1
+MenuName:Gothic CG No1
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\AppServ\www\leblon\v1.0\Font\gothicRegular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:22224
+FileModTime:1419683254
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Gothic CG No1
+NameArray:0,Win,1,Gothic CG No1
+%EndFont
+

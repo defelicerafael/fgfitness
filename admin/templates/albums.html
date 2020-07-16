@@ -1,0 +1,21 @@
+<header></header>
+<div  class="md-padding">
+    <div  ng-init="ctrl.traerReseniasMostrarSi(ctrl.id);">
+        <div layout="row" layout-xs="column" layout-align="start start" flex="100" style="padding: 2%;">
+            <div flex="66" flex-xs="100">
+                <h3 layout="row" class="md-display-1 gris justify">{{ctrl.resenias[0].subtitulo}}</h3>
+                <img hspace="35" vspace="15" style="width: 50%; height: auto; float:left;" ng-src="img/tapas/{{ctrl.resenias[0].tapa}}" alt="{{ctrl.resenias[0].banda}}-{{ctrl.resenias[0].nombre}}-{{ctrl.resenias[0].anio}}-clic-moderno!" title="{{ctrl.resenias[0].banda}}-{{ctrl.resenias[0].nombre}}-{{ctrl.resenias[0].anio}}-clic-moderno">
+                <span class="gris justify" ng-bind-html="ctrl.resenias[0].texto"></span>
+            </div>
+            <div flex="33" flex-xs="100" layout="row" layout-align="center start" layout-align-xs="center center">
+                <md-chips input-aria-label="Favorite Sports" input-aria-describedby="staticChipsNote" md-add-on-blur="true">
+                    <md-chip>{{ctrl.resenias[0].banda}}</md-chip>
+                    <md-chip>{{ctrl.resenias[0].anio}}</md-chip>
+                    <md-chip>{{ctrl.resenias[0].titulo}}</md-chip>
+                </md-chips>  
+            </div>
+        </div>
+        
+    </div>
+</div>
+

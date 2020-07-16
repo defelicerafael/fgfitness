@@ -1,0 +1,78 @@
+
+<md-content layout="column" layout-padding ng-init="ctrl.traerArticulos('no');">
+    <section>
+        
+            <md-tabs md-dynamic-height md-border-bottom >
+                <md-tab label="ART&Iacute;CULOS" >
+                    <md-subheader class="md-primary"> CANTIDAD: {{ ctrl.articulosL }} </md-subheader>
+                    <md-list flex>    
+                        <md-list-item class="md-3-line" ng-repeat="datos in ctrl.articulos | orderBy:'id' track by $index">
+                            <img ng-src="../img/articulos/{{datos.id}}/{{datos.img}}" class="" alt="{{datos.nombre}}" style="width: 100px; height: 100px; padding:8px;"/>
+                                <div class="md-list-item-text" layout="column">
+                                    <h3>{{datos.nombre}}</h3>
+                                    <h4>{{datos.categoria}}</h4>
+                                    <p> ${{datos.precio}}</p>
+                                    <p>Stock: {{ctrl.total[$index]}}</p>
+                                </div>
+                                <md-button class="md-icon-button" ng-href="#!/panel/stock/id/{{datos.id}}" aria-label="foto">
+                                    <md-tooltip md-direction="top">Ver Stock</md-tooltip>
+                                    <md-icon md-svg-icon="img/icon/format_list_numbered-black-24dp.svg"></md-icon>
+                                </md-button>
+                                <md-button class="md-icon-button" ng-href="#!/panel/fotos/id/{{datos.id}}" aria-label="foto">
+                                    <md-tooltip md-direction="top">Cambiar Foto</md-tooltip>
+                                    <md-icon md-svg-icon="img/icon/add_photo_alternate-black-24dp.svg"></md-icon>
+                                </md-button>
+                                <md-button class="md-icon-button" ng-href="#!/panel/editar/id/{{datos.id}}" aria-label="edit">
+                                    <md-tooltip md-direction="top">Editar precio</md-tooltip>
+                                    <md-icon md-svg-icon="img/icon/ic_edit_black_24px.svg"></md-icon>
+                                </md-button>
+                                <md-button class="md-icon-button" ng-click="ctrl.Delete(datos.id,'articulos');" aria-label="delete" style="background-color:red">
+                                    <md-tooltip md-direction="top">Borrar Articulo</md-tooltip>
+                                    <md-icon md-svg-icon="img/icon/ic_delete_white_24px.svg"></md-icon>
+                                </md-button>
+                          <md-divider></md-divider>  
+                          </md-list-item>
+                        
+                    </md-list>
+                </md-tab>
+                <md-tab label="NUEVO ART&iacute;CULO">
+                    <md-subheader class="md-primary"> INGRESE UN ART&Iacute;CULO </md-subheader>
+                    <form novalidate class="simple-form" ng-submit="ctrl.insert({'nombre':ctrl.item.nombre,'categoria':ctrl.item.categoria,'precio':ctrl.item.precio,'descripcion':ctrl.item.descripcion},'articulos')">
+                        <md-input-container class="md-block">
+                            <label>Nombre</label>
+                            <input required name="nombre" ng-model="ctrl.item.nombre" type='text'>
+                            <div ng-messages="projectForm.nombre.$error">
+                              <div ng-message="required">Le solicito por favor el nombre del disco o single</div>
+                            </div>
+                        </md-input-container>
+                        <md-select placeholder="categorias" ng-model="ctrl.item.categoria" md-on-open="ctrl.traerCategorias('no')" style="min-width: 200px;">
+                            <md-option ng-value="cat.categoria" ng-repeat="cat in ctrl.categorias">{{cat.categoria}}</md-option>
+                        </md-select>
+                        <md-input-container class="md-block">
+                            <label>Descripci&oacute;n</label>
+                            <input required name="description" ng-model="ctrl.item.descripcion" type='text'>
+                            <div ng-messages="projectForm.description.$error">
+                              <div ng-message="required">Le solicito por favor la descripción del art&iacute;culo</div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                            <label>Precio</label>
+                            <input required name="admin" ng-model="ctrl.item.precio" type='text'>
+                            <div ng-messages="projectForm.admin.$error">
+                              <div ng-message="required">Le solicito por favor el precio del art&iacute;culo</div>
+                            </div>
+                        </md-input-container>
+                        
+                        
+                        <div layout="row" layout-align="end center">   
+                            <md-button type="submit" class="md-raised md-primary">INGRESAR</md-button>
+                        </div>
+                    </form>
+             </md-tab>
+         </md-tabs>  
+        
+        
+      
+     </section>  
+  </md-content>
+

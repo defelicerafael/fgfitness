@@ -1,0 +1,366 @@
+
+@font-face {
+  font-family: 'gothic';
+  src: url('GothicCGNo1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.gothic{
+  font-family: gothic;  
+}
+
+* {margin:0; padding:0}
+/*html {
+  scroll-behavior: smooth;
+}*/
+body,html{
+    height: 100vh;
+    width: 100%;
+    background-color: #EAD4AD;
+    font-family: Rotis; 
+    margin:0 auto;
+   
+}
+
+.fondo-violeta{
+    background-color: #3d243a;
+}
+.violeta{
+    color:#3d243a;
+}
+.home {
+  background: url("http://hamburguesasleblon.com.ar/img/home/hamburguesa-leblon.jpg");
+  
+       /* min-height: 100vh;*/
+        height: 50%;
+        width: 100%;
+        background-position:center center;
+        -webkit-background-position: center center;
+        -moz-background-position: center center;
+        -o-background-position: center center;
+        
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        
+        background-repeat: no-repeat;
+        position: relative;
+       /* background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;*/
+}
+.home .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: black;
+  display: table-cell;
+  vertical-align: middle;
+  animation: 0.6s ease-out 1s 1 slideInFromLeft forwards;
+  opacity:0;
+  
+}
+.home .hero-text h1{
+    text-transform: uppercase;
+    width: 340px;
+    height: 82px;
+    color: rgba(255,255,255,1);
+    margin: auto auto;
+    font-size: 6em;
+}
+
+
+#topnav {
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.5s;
+  font-family: gothic;  
+ /* background-color: white;*/
+}
+.leblon{
+    letter-spacing:0.1em; 
+    font-family: gothic; 
+    text-transform: uppercase;
+}
+.sombra{
+    text-shadow: 1px 1px 3px #000000;
+}
+.img-areas{
+    width: 80%;
+    border-radius:10%;
+   /* border: 5px solid #411F37;*/
+}
+.img-titulo{
+    width: 30%;
+}
+.img-titulo-dos{
+    width: 42%;
+}
+.img-carnes{
+    width: 80%;
+    height: auto;  
+}
+
+.madera{
+    background-color: #EAD4AD;
+}
+.btn-dentro{
+    background-color: #f0e1c7;
+    color:#9b5363;
+    font-size:3em;
+    border-radius:25px;
+    width: 60%;
+    margin-top:-15%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.btn-dentroultimo{
+    background-color: #f0e1c7;
+    color:#9b5363;
+    font-size:3em;
+    border-radius:25px;
+    width: 60%;
+    margin-top:-15%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.btn-dentro:hover{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.btn-dentroultimo:hover{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.texto-borde{
+    -webkit-text-stroke: 2px black;
+  color: transparent;
+}
+#logo-top-nav{
+    text-decoration: none;
+    transition: width 0.5s;
+    font-family: gothic;  
+   /* text-shadow: 1px 1px 3px #000000;*/
+    font-size: 2em;
+    color: #452d3d;
+    letter-spacing:0.1em;
+}
+.link{
+     
+    color: #452d3d;
+    letter-spacing:0.1em;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+}
+.link:hover{
+    text-decoration: none;
+    color: #452d3d;
+    border-bottom-color: #452d3d;
+    border-bottom: solid 5px;
+   
+}
+.link:active{
+    text-decoration: none;
+    color: #452d3d;
+    border-bottom-color: #452d3d;
+    border-bottom: solid 5px;
+   
+}
+
+.link-2{
+     
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+}
+.link-2:hover{
+    color: black;
+    text-decoration: none;
+    border-bottom-color: black;
+    border-bottom: solid 5px;
+   
+}
+
+.one-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px gray;
+	   -moz-box-shadow: 0 8px 6px -6px gray;
+	        box-shadow: 0 8px 6px -6px gray;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.zoom{
+  transition: all .3s ease-in-out;
+  z-index:1;
+  position:relative;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  z-index:10;
+}
+
+
+.fondo-cheddar{
+    background-color: #eba23c;
+    color:#3d243a;
+    font-family: gothic;
+   
+   
+}
+
+.cheddar{
+    color:#FDA435;
+}
+
+
+.text-gris{
+    color:#2C3B4B;
+}
+.line-h{
+    line-height: 1.5;
+}
+.img-icono{
+    background-color: #0099D8;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+    
+
+
+
+.topnav .icon {
+  display: none;
+}
+
+.btn-primary.style-2{
+    background-color: #ff3399;
+    border: none;
+    color: white;
+}
+.aparece{
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    margin-top: 100px;
+    
+}
+.sepia{
+    filter:sepia(70%);
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    top: 65%;
+    opacity:0.2;
+  }
+  100% {
+    top: 50%;
+    opacity:1;
+  }
+}
+.h4p{
+    
+}
+
+
+  
+ 
+
+/* Small devices MD (landscape phones, less than 768px) MD*/
+@media (max-width: 767.98px) {
+    
+    .tit{
+        font-size:1.8em;
+    }
+    .img-areas{
+        width: 98%;
+      
+    }
+    .img-titulo{
+        width: 50%;
+    }
+    .img-titulo-dos{
+        width: 85%;
+    }
+    .img-home{
+        max-width: 200px;
+    }
+    .img-carnes{
+        width: 98%;
+        height: auto;  
+    }
+    .pedidos{
+        font-size: 0.8em;
+    }
+  
+    .home {
+        background: url("http://hamburguesasleblon.com.ar/img/home/hamburguesa-leblon-sola.jpg");
+      /*  min-height: 100vh;*/
+        height: 100%;
+        width: 100%;
+        background-position:center center;
+        -webkit-background-position: center center;
+        -moz-background-position: center center;
+        -o-background-position: center center;
+        
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        
+        background-repeat: no-repeat;
+        position: relative;
+      /*  background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;*/
+    }
+    #logo-top-nav{
+        text-decoration: none;
+        transition: width 0.5s;
+        font-family: Rotis;  
+        text-shadow: 1px 1px 3px #000000;
+        font-size: 0.7em;
+    }
+    h2{
+        font-size:1.2em;
+    }
+    h5{
+        font-size:0.9em;
+    }
+    h4p{
+        font-size:0.5em;
+    }
+    .btn-dentroultimo{
+        background-color: #f0e1c7;
+        color:#9b5363;
+        font-size:3em;
+        border-radius:25px;
+        width: 60%;
+        margin-top:-12%;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .home .hero-text {
+        top: 50%;
+        left: 50%;
+    }
+    .home .hero-text h1{
+        width: 250px;
+        height: 41px;
+        font-size: 4em;
+    }
+}
+

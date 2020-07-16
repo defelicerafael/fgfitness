@@ -1,0 +1,60 @@
+<div class="row no-gutters" id="contacto">
+    <div class="w-100 mt-5">
+        <h2 class="text-center leblon violeta p-lg-5 p-md-4 p-0"><span class="text-fitness">CONTACTO</span></h2>
+    </div>
+    <div class="col-12 p-5 text-fitness-c">
+            <h3 id="resultado" class="bauhaus text-center"></h3>
+            <div id="formulario">
+            <form onsubmit="contacto.enviarEmail(); return false;">
+                <div class="form-group">
+                  <label for="name">NOMBRE Y APELLIDO *</label>
+                  <input type="text" class="form-control" id="name_" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">EMAIL *</label>
+                  <input type="email" class="form-control" id="email_" required>
+                  <small id="emailHelp" class="form-text text-muted">Nunca compartiremos esta informaci&oacute;n.</small>
+                </div>
+                <div class="form-group">
+                  <label for="telefono">TEL&Eacute;FONO *</label>
+                  <input type="text" class="form-control" id="telefono_" required>
+                </div>
+                <div class="form-group">
+                    <label for="textarea">MENSAJE</label>
+                    <textarea class="form-control" id="textarea" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn btn-blue btn-sm one-edge-shadow" id="btn_enviar">Enviar</button>
+                
+                <button class="btn btn btn-blue btn-sm one-edge-shadow" style="display:none;" type="button" disabled id="btnEnviando">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Enviando...
+                </button>
+                <!--<div style="width:200px;height:200px;margin:0 auto;" id="animation_lottie"></div>-->    
+
+            </form>
+        </div>
+    </div>    
+</div>    
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.6.10/lottie.min.js" type="text/javascript"></script>
+<script>
+  var btn_enviar = document.getElementById('btn_enviar').addEventListener("click",playAnimation);
+  var animation = lottie.loadAnimation({
+  container: document.getElementById('animation_lottie'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: false,
+  autoplay: false,
+  path: 'lottie/18781-email-sent-by-todd-rocheford.json',
+  name:'envio_email'// the path to the animation json
+});
+function playAnimation(){
+animation.play();    
+animation.setSpeed(0.7); 
+//animation.play('envio_email');
+}
+
+</script> -->          
+  
+
+        
+    

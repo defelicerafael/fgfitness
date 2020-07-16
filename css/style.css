@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Nimbus Sans';
+    src: local('Nimbus Sans Bold'), local('Nimbus-Sans-Bold'),
+        url('NimbusSanL-Bol.woff2') format('woff2'),
+        url('NimbusSanL-Bol.woff') format('woff'),
+        url('NimbusSanL-Bol.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

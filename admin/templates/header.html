@@ -1,0 +1,53 @@
+<div layout="column" ng-cloak>
+    <md-toolbar class="md-hue-1" md-scroll-shrink ng-if="true">
+        <div class="md-toolbar-tools" >
+            <md-button class="md-icon-button" aria-label="Settings" ng-click="ctrl.toggleSidenav()">
+              <md-icon md-svg-icon="img/icon/ic_menu_white_36px.svg"></md-icon>
+            </md-button>
+            <h3 flex md-truncate>CLIC MODERNO</h3>
+        </div>
+    </md-toolbar>
+
+<section layout="row" flex>
+
+<md-sidenav class="md-sidenav-left" md-component-id="closeEventsDisabled"
+                  md-whiteframe="4" md-disable-close-events>
+    <md-toolbar class="md-hue-1">
+        <div layout="row" layout-align="end center" class="md-toolbar-tools">
+            <h3 flex md-truncate>MENU</h3>
+            <md-button class="md-icon-button" aria-label="Settings" ng-click="ctrl.toggleSidenav()">
+              <md-icon md-svg-icon="img/icon/ic_close_white_32px.svg"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-content layout-margin="">
+        <md-list flex>
+        <md-list-item class="md-1-line" ng-click="null">
+          <img ng-src="img/icon/album-24px.svg" class="md-avatar" />
+          <div class="md-list-item-text" layout="column">
+            <h4>ALBUMS</h4>
+          </div>
+        </md-list-item>
+        <md-list-item class="md-1-line" ng-click="null">
+          <img ng-src="img/icon/music_note-24px.svg" class="md-avatar" />
+          <div class="md-list-item-text" layout="column">
+            <h4>SINGLES</h4>
+          </div>
+        </md-list-item>
+        <md-list-item class="md-1-line" ng-click="null">
+          <img ng-src="img/icon/record_voice_over-24px.svg" class="md-avatar" />
+          <div class="md-list-item-text" layout="column">
+            <h4>ENTREVISTAS</h4>
+          </div>
+        </md-list-item>
+        <md-list-item class="md-1-line" ng-click="null">
+          <img ng-src="img/icon/email-24px.svg" class="md-avatar" />
+          <div class="md-list-item-text" layout="column">
+            <h4>CONTACTO</h4>
+          </div>
+        </md-list-item>
+        </md-list>
+    </md-content>
+</md-sidenav>
+</section>
+</div>

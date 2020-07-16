@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://aluniverso.com.ar/$1 [R=301,L,QSA]
+</IfModule>
+<FilesMatch \.p(hp|hp5|hp7|html)$>
+    SetHandler proxy:unix:/opt/php7-3/var/run/php-fpm/c1870599.sock|fcgi://c1870599
+</FilesMatch>

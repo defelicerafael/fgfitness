@@ -1,0 +1,125 @@
+[
+    {
+        "id":"0",
+        "img":["https://mirfitness.com.ar/wp-content/uploads/1961-1-300x300.jpg"],
+        "nombre":"Colchoneta est&aacute;ndard",
+        "categoria":"gym",
+        "subcategoria":"Bandas El&aacute;sticas",
+        "precio":["2650"],
+        "detalle":"1 x 0,50 x 0,04 m",
+        "variante":[{"color":["azul","negro","rojo","verde"]}],
+        "description":"Alta densidas poliuretano"
+    },
+     {
+        "id":"1",
+        "img":["https://mirfitness.com.ar/wp-content/uploads/MIR_Fotos-para-web_dominadas-300x300.jpg"],
+        "nombre":"Kit de bandas para dominadas",
+        "categoria":"gym",
+        "subcategoria":"Bandas El&aacute;sticas",
+        "precio":["239.90"],
+        "detalle":"1 x 0,50 x 0,04 m",
+        "variante":[],
+        "description":"Banda circular que permite mediante su colocaci&oacute;n en la barra, pisarla y as&iacute; ayudar al cuerpo en el trabajo de brazos. El kit incluye una banda de cada tensi&oacute;n: liviana, media y alta. Utilizaci&oacute;n: Para ejercitar y tonificar brazos."
+    },
+    {
+        "id":"2",
+        "img":["https://mirfitness.com.ar/wp-content/uploads/Producto-Final09.jpg"],
+        "nombre":"Kit Tiranband Circular MIR",
+        "categoria":"gym",
+        "subcategoria":"Bandas El&aacute;sticas",
+        "precio":["239.90"],
+        "detalle":"1 x 0,50 x 0,04 m",
+        "variante":[],
+        "description":"Kit de 3 cintas circulares para trabajar piernas. Incluye una cinta por intensidad: liviana, media y alta. Utilizaci&oacute;n: Coordinaci&oacute;n, musculaci&oacute;n, tonificaci&oacute;n."
+    },
+    {
+        "id":"3",
+        "img":["https://mirfitness.com.ar/wp-content/uploads/DSC_0823-300x300.jpg"],
+        "nombre":"Kit Tiranband MIR",
+        "categoria":"gym",
+        "subcategoria":"Bandas El&aacute;sticas",
+        "precio":["239.90"],
+        "detalle":"1 x 0,50 x 0,04 m",
+        "variante":[],
+        "description":"Kit de 3 cintas de 15cm de ancho x 120cm de largo. Incluye una por cada tensi&oacute;n: alta, media y baja. Utilizaci&oacute;n: Coordinaci&oacute;n, musculaci&oacute;n, tonificaci&oacute;n."
+    },
+    {
+        "id":"4",
+        "img":["https://mirfitness.com.ar/wp-content/uploads/2087-300x300.jpg"],
+        "nombre":"Banda para dominadas MIR",
+        "categoria":"gym",
+        "subcategoria":"Bandas El&aacute;sticas",
+        "precio":["239.90"],
+        "detalle":"1 x 0,50 x 0,04 m",
+        "variante":[],
+        "description":"Banda el&aacute;stica circular de liviana, media o alta intensidad que permite mediante su colocaci&oacute;n en la barra ayudar al cuerpo en el trabajo de dominadas. Utilizaci&oacute;n: Para ejercitar y tonificar brazos."
+    },
+    {
+        "id":"5",
+        "img":["https://mirfitness.com.ar/wp-content/uploads/Producto-Final10.jpg"],
+        "nombre":"Tiraband Circular MIR",
+        "categoria":"gym",
+        "subcategoria":"Bandas El&aacute;sticas",
+        "precio":["239.90"],
+        "detalle":"1 x 0,50 x 0,04 m",
+        "variante":[{"intensidad":["alta","media","baja"],"precio":["900","800","700"]}],
+        "description":"Cinta circular de distintas intensidades -liviana, media y alta- para trabajar piernas. Utilizaci&oacute;n: Coordinaci&oacute;n, musculaci&oacute;n, tonificaci&oacute;n."
+    },
+    {
+        "id":"6",
+        "img":["https://mirfitness.com.ar/wp-content/uploads/DSC_0826.jpg"],
+        "nombre":"Tiraband MIR",
+        "categoria":"gym",
+        "subcategoria":"Bandas El&aacute;sticas",
+        "precio":["900,00 - 700,00"],
+        "detalle":"1 x 0,50 x 0,04 m",
+        "variante":[{"intensidad":["alta","media","baja"],"precio":["900","800","700"]}],
+        "description":"Cinta de 15cm de ancho x 120cm de largo, disponible en distintas tensiones: alta, media y baja. Utilizaci&oacute;n: Coordinaci&oacute;n, musculaci&oacute;n, tonificaci&oacute;n."
+    },
+    {
+        "id":"7",
+        "img":["https://mirfitness.com.ar/wp-content/uploads/2089-300x300.jpg"],
+        "nombre":"Banda funcional",
+        "categoria":"gym",
+        "subcategoria":"Bandas El&aacute;sticas",
+        "precio":["239.90"],
+        "detalle":"1 x 0,50 x 0,04 m",
+        "variante":[{"intensidad":["alta","media","baja"],"precio":["900","800","700"]}],
+        "description":"Doble banda el&aacute;stica tubular formada por dos tiras de l&aacute;tex de 1.10m. unidas en sus extremos, dando origen a una banda de 2.20m de media (roja) o m&aacute;xima (negra) tensi&oacute;n, con manijas r&iacute;gidas. Utilizaci&oacute;n: Musculaci&oacute;n y tonificaci&oacute;n funcional."
+    },
+    {
+        "id":"8",
+        "img":["https://mirfitness.com.ar/wp-content/uploads/2284-300x300.jpg"],
+        "nombre":"Banda larga reforzada",
+        "categoria":"gym",
+        "subcategoria":"Bandas El&aacute;sticas",
+        "precio":["239.90"],
+        "detalle":"1 x 0,50 x 0,04 m",
+        "variante":[{"intensidad":["alta","media","baja"],"precio":["900","800","700"]}],
+        "description":"Banda el&aacute;stica tubular reforzada con cinta protectora y manijas recubiertas. Utilizaci&oacute;n: Para todo tipo de Ejercicios. Elongaci&oacute;n, Entrenamiento Funcional y Pilates."
+    },
+    {
+        "id":"9",
+        "img":["https://mirfitness.com.ar/wp-content/uploads/2287-300x300.jpg"],
+        "nombre":"Banda Redonda",
+        "categoria":"gym",
+        "subcategoria":"Bandas El&aacute;sticas",
+        "precio":["239.90"],
+        "detalle":"1 x 0,50 x 0,04 m",
+        "variante":[{"intensidad":["alta","media","baja"],"precio":["900","800","700"]}],
+        "description":"Banda el&aacute;stica tubular. Utilizaci&oacute;n: Para todo tipo de Ejercicios. Elongaci&oacute;n, Entrenamiento Funcional y Pilates."
+    },
+    {
+        "id":"10",
+        "img":["https://mirfitness.com.ar/wp-content/uploads/2286-300x300.jpg"],
+        "nombre":"Banda en forma de 8",
+        "categoria":"gym",
+        "subcategoria":"Bandas El&aacute;sticas",
+        "precio":["239.90"],
+        "detalle":"1 x 0,50 x 0,04 m",
+        "variante":[{"intensidad":["alta","media","baja"],"precio":["900","800","700"]}],
+        "description":"Banda el&aacute;stica tubular en forma de ocho. Utilizaci&oacute;n: Para todo tipo de Ejercicio. Elongaci&oacute;n, Entrenamiento Funcional y Pilates."
+    }
+    
+
+]

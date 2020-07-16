@@ -1,0 +1,55 @@
+<md-content  layout-padding ng-init="ctrl.traerStocks('articulo-'+ctrl.idArt); ctrl.sumas_sql('stock','stock',ctrl.idArt);">
+    <md-tabs md-dynamic-height md-border-bottom >
+        <md-tab label="STOCK" >
+            <md-subheader class="md-primary"> STOCK ( {{ctrl.total}} )</md-subheader>
+            <md-list flex>
+                <md-list-item class="md-3-line" ng-repeat="datos in ctrl.stock | orderBy:'id' track by $index">
+                        <div class="md-list-item-text" layout="column">
+                            <h3>Articulo id:{{datos.articulo}}</h3>
+                            <p ng-if='datos.color'>Color: {{datos.color}}</p>
+                            <p ng-if='datos.modelo'>Modelo: {{datos.modelo}}</p>
+                            <p ng-if='datos.talle'>Talle: {{datos.talle}}</p>
+                            <p ng-if='datos.tamanio'>Tama&ntilde;o: {{datos.tamanio}}</p>
+                            <p>Stock: {{datos.stock}}</p>
+                        </div>
+                        <md-button class="md-icon-button" ng-href="#!/panel/editar/stock/id/{{datos.id}}" aria-label="edit">
+                            <md-tooltip md-direction="top">Editar Stock</md-tooltip>
+                            <md-icon md-svg-icon="img/icon/ic_edit_black_24px.svg"></md-icon>
+                        </md-button>
+                        <md-button class="md-icon-button" ng-click="ctrl.Delete(datos.id,'stock');" aria-label="delete" style="background-color:red">
+                            <md-tooltip md-direction="top">Borrar Stock</md-tooltip>
+                            <md-icon md-svg-icon="img/icon/ic_delete_white_24px.svg"></md-icon>
+                        </md-button>
+                    <md-divider></md-divider>  
+                </md-list-item>
+            </md-list>
+        </md-tab>
+        <md-tab label="CREAR STOCK">
+                    <md-subheader class="md-primary"> INGRESE UN NUEVO STOCK </md-subheader>
+                    <form novalidate class="simple-form" ng-submit="ctrl.insert({'articulo':ctrl.idArt,'color':ctrl.stock.color,'talle':ctrl.stock.talle,'modelo':ctrl.stock.modelo,'tamanio':ctrl.stock.tamanio,'stock':ctrl.stock.stock},'stock')">
+                        <md-select placeholder="colores" ng-model="ctrl.stock.color" md-on-open="ctrl.traerColores('no')" style="min-width: 200px;">
+                            <md-option ng-value="color.color" ng-repeat="color in ctrl.colores">{{color.color}}</md-option>
+                        </md-select>
+                        <md-select placeholder="modelos" ng-model="ctrl.stock.modelo" md-on-open="ctrl.traerModelos('no')" style="min-width: 200px;">
+                            <md-option ng-value="modelo.modelo" ng-repeat="modelo in ctrl.modelos">{{modelo.modelo}}</md-option>
+                        </md-select>
+                        <md-select placeholder="talles" ng-model="ctrl.stock.talle" md-on-open="ctrl.traerTalles('no')" style="min-width: 200px;">
+                            <md-option ng-value="talle.talle" ng-repeat="talle in ctrl.talles">{{talle.talle}}</md-option>
+                        </md-select>
+                        <md-select placeholder="tama&ntilde;os" ng-model="ctrl.stock.tamanio" md-on-open="ctrl.traerTamanios('no')" style="min-width: 200px;">
+                            <md-option ng-value="tamanio.tamanio" ng-repeat="tamanio in ctrl.tamanios">{{tamanio.tamanio}}</md-option>
+                        </md-select>
+                        <md-input-container class="md-block">
+                            <label>Stock</label>
+                            <input required name="stock" ng-model="ctrl.stock.stock" type='text'>
+                            <div ng-messages="projectForm.stock.$error">
+                              <div ng-message="required">Le solicito por favor la cantidad</div>
+                            </div>
+                        </md-input-container>
+                        <div layout="row" layout-align="end center">   
+                            <md-button type="submit" class="md-raised md-primary">CREAR STOCK</md-button>
+                        </div>
+                    </form>
+                </md-tab>
+         </md-tabs>  
+</md-content>    

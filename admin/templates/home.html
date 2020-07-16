@@ -1,0 +1,40 @@
+<header></header>
+<md-content class="md-padding" layout-xs="column" layout="row">
+    <div layout-xs="column" layout="row" layout-wrap="" ng-init="ctrl.traerReseniasMostrarSi('si');">
+        <div flex-xs="100" flex="33" ng-repeat="c in ctrl.resenias track by $index">
+           <md-card>
+              <md-card-header>
+                  <md-card-avatar>
+                      <img class="md-user-avatar" src="img/icon/album-24px.svg" alt="icono-clic-moderno" title="clic-moderno" ng-if="c.album === 'album';"/>
+                      <img class="md-user-avatar" src="img/icon/music_note-24px.svg" alt="icono-clic-moderno" title="clic-moderno" ng-if="c.album === 'single';"/>
+                  </md-card-avatar>
+                  <md-card-header-text>
+                      <span class="md-title">{{c.banda | uppercase}}</span>
+                      <span class="md-subhead">{{c.anio}}</span>
+                  </md-card-header-text>
+              </md-card-header>
+                <img ng-src="img/tapas/{{c.tapa}}" class="md-card-image cuadrado" alt="{{c.banda}}-{{c.nombre}}-{{c.anio}}-clic-moderno!" title="{{c.banda}}-{{c.nombre}}-{{c.anio}}-clic-moderno">
+                <md-card-title>
+                    <md-card-title-text>
+                      <span class="md-headline">{{c.titulo}}</span>
+                      <span class="md-subhead">{{c.subtitulo}}</span>
+                    </md-card-title-text>
+                  </md-card-title>
+              <md-card-actions layout="row" layout-align="end center">
+                  <md-button class="md-icon-button" aria-label="leer rese&ntilde;a" ng-href="/clicmoderno/#!/{{c.album}}/{{c.nombreLink}}">
+                      <md-tooltip md-direction="top">leer rese&ntilde;a</md-tooltip>
+                      <md-icon md-svg-icon="img/icon/visibility-24px.svg" alt="leer rese&ntilde;a" title="leer rese&ntilde;a"></md-icon>
+                  </md-button>
+                  <md-button class="md-icon-button" aria-label="Escuchar" ng-click="ctrl.toggleEscuchar(c.link);">
+                      <md-tooltip md-direction="top">Escuchar</md-tooltip>
+                      <md-icon md-svg-icon="img/icon/hearing-24px.svg" alt="escuchar disco o tema" title="escuchar disco o tema"></md-icon>
+                  </md-button>
+                  <md-button class="md-icon-button" aria-label="Compartir reseña" ng-click="">
+                      <md-tooltip md-direction="top">Compartir rese&ntilde;a</md-tooltip>
+                      <md-icon md-svg-icon="img/icon/share-24px.svg" alt="compartir rese&ntilde;a" title="compartir rese&ntilde;a"></md-icon>
+                  </md-button>
+              </md-card-actions>
+          </md-card>
+       </div>
+   </div>
+</md-content>

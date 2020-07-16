@@ -1,0 +1,21 @@
+<md-content  layout-padding ng-init="ctrl.traerArticulos(ctrl.idArt)">
+    <md-subheader class="md-primary"> RESE&Ntilde;AS </md-subheader>
+    <form novalidate class="simple-form" ng-submit="ctrl.Edit({'nombre':ctrl.articulos[0].nombre,'categoria':ctrl.articulos[0].categoria,'descripcion':ctrl.articulos[0].descripcion},'articulos',ctrl.articulos[0].id)">
+        <md-input-container class="md-block">
+            <label style="color:black;">Nombre</label>
+            <input ng-model="ctrl.articulos[0].nombre" type="text">
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label style="color:black;">Categoria</label>
+            <input ng-model="ctrl.articulos[0].categoria" type="text">
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label style="color:black;">Descripci&oacute;n</label>
+            <input ng-model="ctrl.articulos[0].descripcion" type="text" maxlength="500">
+        </md-input-container>
+      
+        <div layout="row" layout-align="end center">   
+            <md-button type="submit" class="md-raised md-primary">EDITAR</md-button>
+        </div>
+    </form>
+</md-content>    
